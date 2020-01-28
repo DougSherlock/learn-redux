@@ -17,3 +17,23 @@ export const login = () => {  //doug
         type: 'SIGN_IN'
     }
 }
+
+export const addTask = (taskName) => {
+    console.log('addTask')
+    return {
+        type: 'ADD_TASK',
+        taskName: taskName
+    }
+}
+
+export const setTaskState = (index, isDone) => {
+    console.log('setTaskState');
+    return {
+        type: 'SET_TASK_STATE',
+        payload: {
+            index: index,
+            isDone: isDone    
+        }
+    }
+}
+
