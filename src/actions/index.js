@@ -11,3 +11,9 @@ export const decrement = (delta) => {
         amount: delta
     }
 }
+
+export const login = () => {  //doug
+    return {
+        type: 'SIGN_IN'
+    }
+}

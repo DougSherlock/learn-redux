@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'; //doug - import the store
 import allReducer from './reducers/index';
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'; //doug - Provider connects the global state to app
 
 //------------------------------------------------------------
 //doug - store is a global state -----------------------------
