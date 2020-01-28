@@ -2,7 +2,9 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'; //doug - useSelector provides access to the redux state
 import { increment, decrement } from './actions';
 
-
+/*---------------------------------------------------------------------------------------------
+Reference: https://www.youtube.com/watch?v=CVpUuw9XSjY
+---------------------------------------------------------------------------------------------*/
 function App() {
   const counter = useSelector(state => state.counter); //doug - useSelector provides access to the redux state
   const isLogged = useSelector(state => state.isLogged);
