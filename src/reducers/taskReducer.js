@@ -26,6 +26,10 @@ const taskReducer = (taskList = [], action) => {
                   isDone: action.payload.isDone
                 }
               })              
+        case 'DELETE_TASK':
+            // use 'splice' to return a clone of the array minus the item at the index
+            console.log('taskReducer: ' + action.type)
+            return [...taskList.splice(0, action.payload.index), ...taskList.splice(action.payload.index)]
         default:
             // if no handler is found, just return the existing state to be safe
             return taskList

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'; //doug - useSelector provides access to the redux state
-import { increment, decrement, login, addTask, setTaskState } from './actions'; // actions are imported for use in this file
+import { increment, decrement, login, addTask, setTaskState, deleteTask } from './actions'; // actions are imported for use in this file
 import { Tasks } from './Tasks'; // import for child component
 
 /*---------------------------------------------------------------------------------------------

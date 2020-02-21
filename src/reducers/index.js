@@ -1,7 +1,7 @@
 import counterReducer from './counter';
 import loggedReducer from './isLogged';
-import {combineReducers}  from 'redux';
 import taskReducer from './taskReducer';
+import {combineReducers}  from 'redux';
 
 const allReducers = combineReducers({
     counter: counterReducer,

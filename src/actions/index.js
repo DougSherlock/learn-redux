@@ -26,6 +26,16 @@ export const addTask = (taskName) => {
     }
 }
 
+export const deleteTask = (index) => {
+    console.log('deleteTask');
+    return {
+        type: 'DELETE_TASK',
+        payload: {
+            index: index,
+        }
+    }
+}
+
 export const setTaskState = (index, isDone) => {
     console.log('setTaskState');
     return {

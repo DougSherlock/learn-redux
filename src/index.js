@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'; //doug - import the store
-import allReducer from './reducers/index';
-import { Provider } from 'react-redux'; //doug - Provider connects the global state to app
+import allReducer from './reducers/index'; // consolidates all the reducers we have defined into one
+import { Provider } from 'react-redux'; //doug - Provider connects the global store to app
 
 //------------------------------------------------------------
 //doug - store is a global state -----------------------------
@@ -18,7 +18,7 @@ const store = createStore(
 
 
 //------------------------------------------------------------
-//doug - Provider wraps the App compoent ---------------------
+//doug - Provider wraps the App component ---------------------
 //------------------------------------------------------------
 ReactDOM.render(
 <Provider store={store}>
